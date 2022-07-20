@@ -126,6 +126,11 @@ Get-WorkdayWorker -WorkerId 123 -IncludePersonal
             $request.Get_Workers_Request.Response_Group.Include_Compensation = 'true'
             $request.Get_Workers_Request.Response_Group.Include_Organizations = 'true'
             $request.Get_Workers_Request.Response_Group.Include_Roles = 'true'
+            $request.Get_Workers_Request.Response_Group.Include_Reference  = 'true'
+            $request.Get_Workers_Request.Response_Group.Include_Employment_Information  = 'true'
+            $request.Get_Workers_Request.Response_Group.Include_User_Account  = 'true'
+             
+             	
         }
 
         if ($IncludeDocuments) {
